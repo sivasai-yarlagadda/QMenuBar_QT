@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="displaylabel">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>The selected File path will be displayed here.</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="contentlabel">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_File"/>
+    <addaction name="actionOpen_File"/>
+    <addaction name="actionExit_File"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew_File"/>
+   <addaction name="actionOpen_File"/>
+   <addaction name="separator"/>
+   <addaction name="actionExit_File"/>
+  </widget>
+  <action name="actionNew_File">
+   <property name="icon">
+    <iconset resource="resourceimages.qrc">
+     <normaloff>:/Images/images/newitem.png</normaloff>:/Images/images/newitem.png</iconset>
+   </property>
+   <property name="text">
+    <string>New File</string>
+   </property>
+  </action>
+  <action name="actionOpen_File">
+   <property name="icon">
+    <iconset resource="resourceimages.qrc">
+     <normaloff>:/Images/images/open.png</normaloff>:/Images/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionExit_File">
+   <property name="icon">
+    <iconset resource="resourceimages.qrc">
+     <normaloff>:/Images/images/close.jpg</normaloff>:/Images/images/close.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Exit File</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resourceimages.qrc"/>
+ </resources>
+ <connections/>
+</ui>
